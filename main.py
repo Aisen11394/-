@@ -6,10 +6,10 @@ import requests
 import json
 
 # Telegram bot token
-API_TOKEN = "___TELEGRAM_API_TOKEN___"
+API_TOKEN = 7187800106:AAE9qZR0Z632pRR0pPtnr1E8suC7cq0lvCw""
 
 # ProbivAPI secret key
-PROBIVAPI_KEY = "___PROBIVAPI_TOKEN___"
+PROBIVAPI_KEY = "24de6ae6-8bae-4445-8ee6-25367f6af35b"
 
 # Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
@@ -23,7 +23,7 @@ async def send_welcome(message: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await message.reply("От души брат")
+    await message.reply("Probiv Bot Template by DimonDev: @dimondevchat")
 
 
 # This is the main probiv function that returns a json and formats it, then sends it
@@ -40,7 +40,7 @@ async def text(message: types.Message):
     # Necessary headers for the API to work
     head = {
         # API key that you can get by subscribing to the API
-        "X-Auth": 24de6ae6-8bae-4445-8ee6-25367f6af35b
+        "X-Auth": PROBIVAPI_KEY
     }
 
     # Send the request with all the parameters and print the result for debugging
@@ -87,7 +87,7 @@ async def text(message: types.Message):
                            🔎 ФИО (ViewCaller): {viewcaller_api_name}
                            📞 ФИО (TrueCaller): {truecaller_api_name}
 
-                           
+                           @dimondev_ru
                            
                            Код бота: https://github.com/SegYT/glazboga/
 
