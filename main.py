@@ -1,28 +1,25 @@
-import phonenumbers
-from phonenumbers import timezone, geocoder, carrier
-import telebot
+token = 'xx:xxxx' # Токен бота
 
-bot = telebot.TeleBot("7187800106:AAE9qZR0Z632pRR0pPtnr1E8suC7cq0lvCw", parse_mode=None)
+loginbot = 'xxxx_bot' # Логин бота телеграм
 
-@bot.message_handler(commands=["start"])
-def echo_welcome(message):
-    answer = "Привет я бот который сделает небольшой пробив\nпросто дай мне его номер"
-    bot.send_message(message.chat.id, answer)
 
-@bot.message_handler(content_types=["text"])
-def echo_num(message):
-    phonenumber = phonenumbers.parse(message.text)
-    carrier2 = carrier.name_for_number(phonenumber, "ru")
-    region = geocoder.description_for_number(phonenumber, "ru")
-    timezone1 = timezone.time_zones_for_number(phonenumber)
-    valid = phonenumbers.is_valid_number(phonenumber)
 
-    answer0 = bot.send_message(message.chat.id, carrier2)
-    answer1 = bot.send_message(message.chat.id, timezone1)
-    answer2 = bot.send_message(message.chat.id, region)
-    if valid == True:
-        bot.send_message(message.chat.id, "Номер правельный")
-    elif valid == False:
-        bot.send_message(message.chat.id, "Номер не правильный")
+QIWI_PUBLICKEY = 'xxxxxx' #p2p public key
 
-bot.infinity_polling()
+QIWI_TOKEN = 'xxxxxxxx' # токен киви
+
+QIWI_NUMBER = '77777777777' # Номер киви без +
+
+
+
+admin_id = 1111111111 # Ваш айди
+
+
+
+price = 190 # Цена за доступ
+
+
+
+#Ссылка на канал - @slivmenss
+
+#Наш чат - @slivmens_chat
