@@ -2,7 +2,7 @@ import phonenumbers
 from phonenumbers import timezone, geocoder, carrier
 import telebot
 
-bot = telebot.TeleBot("token", parse_mode=None)
+bot = telebot.TeleBot("7187800106:AAE9qZR0Z632pRR0pPtnr1E8suC7cq0lvCw", parse_mode=None)
 
 @bot.message_handler(commands=["start"])
 def echo_welcome(message):
