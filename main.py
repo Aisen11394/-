@@ -40,7 +40,7 @@ async def text(message: types.Message):
     # Necessary headers for the API to work
     head = {
         # API key that you can get by subscribing to the API
-        "X-Auth": PROBIVAPI_KEY
+        "X-Auth": 24de6ae6-8bae-4445-8ee6-25367f6af35b
     }
 
     # Send the request with all the parameters and print the result for debugging
